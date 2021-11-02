@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8">
+    <title>Hatvány számoló</title>
+  </head>
+  <body>
+    <input type="number" id="alak" placeholder="Hatvány">
+    <input type="number" id="hatvany" placeholder="Kitevő">
+    <button id="btn" onclick="szamit()">Kiszámítás</button>
+    <span id="eredmeny">Eredmény:</span>
+    <script type="text/javascript">
+      var alak;
+      var hatvany;
+      var eredmeny;
+      function szamit(){
+        alak = document.getElementById('alak').value;
+        hatvany = document.getElementById('hatvany').value;
+        eredmeny = 1;
+        for(var i = 0; i < hatvany; i++){
+          eredmeny = eredmeny * alak;
+        }
+        document.getElementById('eredmeny').innerHTML = "Eredmény: " + eredmeny;
+      }
+    </script>
+  </body>
+</html>
