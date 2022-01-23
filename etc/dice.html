@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>
+Roll a dice
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/roll.css">
+</head>
+
+<body>
+<div id="content">
+<img src="assets/1.png" id="d1" class="hidden">
+<img src="assets/2.png" id="d2" class="hidden">
+<img src="assets/3.png" id="d3" class="hidden">
+<img src="assets/4.png" id="d4" class="hidden">
+<img src="assets/5.png" id="d5" class="hidden">
+<img src="assets/6.png" id="d6" class="hidden">
+<br><br><br><br><br><br><br>
+<button id="btn" onclick="roll()">
+Roll
+</button>
+</div>
+<script>
+function roll(){
+	var random = Math.floor(Math.random() *6+1);
+	if(random == 1){
+	document.getElementById("d1").style.display = "block";
+	document.getElementById("d2").style.display = "none";
+	document.getElementById("d3").style.display = "none";
+	document.getElementById("d4").style.display = "none";
+	document.getElementById("d5").style.display = "none";
+	document.getElementById("d6").style.display = "none";
+	}
+	if(random == 2){
+	document.getElementById("d2").style.display = "block";
+	document.getElementById("d1").style.display = "none";
+	document.getElementById("d3").style.display = "none";
+	document.getElementById("d4").style.display = "none";
+	document.getElementById("d5").style.display = "none";
+	document.getElementById("d6").style.display = "none";
+	}
+	if(random == 3){
+	document.getElementById("d3").style.display = "block";
+	document.getElementById("d1").style.display = "none";
+	document.getElementById("d2").style.display = "none";
+	document.getElementById("d4").style.display = "none";
+	document.getElementById("d5").style.display = "none";
+	document.getElementById("d6").style.display = "none";
+	}
+	if(random == 4){
+	document.getElementById("d4").style.display = "block";
+	document.getElementById("d1").style.display = "none";
+	document.getElementById("d2").style.display = "none";
+	document.getElementById("d3").style.display = "none";
+	document.getElementById("d5").style.display = "none";
+	document.getElementById("d6").style.display = "none";
+	}
+	if(random == 5){
+	document.getElementById("d5").style.display = "block";
+	document.getElementById("d1").style.display = "none";
+	document.getElementById("d2").style.display = "none";
+	document.getElementById("d3").style.display = "none";
+	document.getElementById("d4").style.display = "none";
+	document.getElementById("d6").style.display = "none";
+	}
+	if(random == 6){
+	document.getElementById("d6").style.display = "block";
+	document.getElementById("d1").style.display = "none";
+	document.getElementById("d2").style.display = "none";
+	document.getElementById("d3").style.display = "none";
+	document.getElementById("d4").style.display = "none";
+	document.getElementById("d5").style.display = "none";
+	}
+}
+</script>
+
+</body></html>

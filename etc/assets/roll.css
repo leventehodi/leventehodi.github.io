@@ -1,0 +1,45 @@
+body{
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.hidden{
+	/*display: none;*/
+	width: 120px;
+	height: 120px;
+	position: absolute;
+}
+#d1{
+	display: block;
+}
+#d2{
+	display: none;
+}
+#d3{
+	display: none;
+}
+#d4{
+	display: none;
+}
+#d5{
+	display: none;
+}
+#d6{
+	display: none;
+}
+#btn{
+	border-radius: 0px;
+	border: 1px solid black;
+	width: 120px;
+	height: 40px;
+	font-size: 15px;
+}
+button:hover{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+#content{
+	position: absolute;
+	top: 30%;
+	left: 35%;
+}
