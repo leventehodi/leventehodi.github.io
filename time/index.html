@@ -22,7 +22,7 @@
       }
     </style>
 </head>
-<body>
+<body onclick="negative()">
     <div class="center">
         <div id="clock"></div>
     </div>
@@ -42,10 +42,8 @@
         if (i < 10) {i = "0" + i};
         return i;
       }
-
-      startTime()
         
-      document.body.onclick = function(){
+      function negative(){
         if(document.body.style.backgroundColor == "#fff"){
             document.body.style.backgroundColor == "#000";
             document.getElementById("clock").style.color = "#fff"
@@ -54,7 +52,10 @@
             document.body.style.backgroundColor == "#fff";
             document.getElementById("clock").style.color = "#000"
         }
+        alert()
       }
+      startTime()
+        
     </script>
 </body>
 </html>
