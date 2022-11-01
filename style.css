@@ -192,7 +192,7 @@
 
 @media screen and (max-width: 750px) {
     #profile-container{
-        width: 360px;
+        width: 340px;
         height: 600px;
     }
     #bios{
@@ -203,15 +203,15 @@
         margin-right: 20px;
     }
     .bio{
-        height: 161px;
-        width: 320px;
+        height: 162px;
+        width: 300px;
     }
     #socials{
         margin-top: 10px;
         flex-direction: column;
     }
     .social-btn{
-        width: 320px;
+        width: 300px;
     }
     #personal-bio{
         margin-top: 15px;
