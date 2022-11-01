@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>f1oppa</title>
+</head>
+<body>
+    <video autoplay muted loop id="videoBg">
+        <source src="content/bg.mp4" type="video/mp4">
+    </video>
+    <div id="wrapper">
+        <div id="profile-container">
+            <div id="basic-info">
+                <img src="content/pfp.png" id="pfp-img">
+                <div id="texts">
+                    <span id="name">
+                        Levente
+                    </span>
+                    <span id="description">
+                        full stack dev
+                    </span>
+                    <span id="location">
+                        <img src="content/location.svg" id="location-icon">
+                        Budapest, Hungary
+                    </span>
+                </div>
+            </div>
+            <div id="bios">
+                <div id="personal-bio" class="bio">
+                    <div class="bio-title">
+                        <img src="content/personal.svg" class="bio-icon">
+                        Personal
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            age:
+                        </span>
+                        <span id="desc">
+                            13
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            birthday:
+                        </span>
+                        <span id="desc">
+                            04/28
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            pronouns: 
+                        </span>
+                        <span id="desc">
+                            he/him
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            languages:
+                        </span>
+                        <span id="desc">
+                            hungarian, english
+                        </span>
+                    </div>
+                    <div>
+                        <span id="category">
+                            hobbys:
+                        </span>
+                        <span id="desc">
+                            gaming, programming, running
+                        </span>
+                    </div>
+                </div>
+                <div id="developer-bio" class="bio">
+                    <div class="bio-title">
+                        <img src="content/dev.svg" class="bio-icon">
+                        Developer
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            coding experience:
+                        </span>
+                        <span id="desc">
+                            3+ years
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            languages:
+                        </span>
+                        <span id="desc">
+                            python, javascript, c/c++, c#, go
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            frameworks:
+                        </span>
+                        <span id="desc">
+                            vanilla html, electron, flask
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span id="category">
+                            libraries:
+                        </span>
+                        <span id="desc">
+                            discord.js
+                        </span>
+                    </div>
+                    <div>
+                        <span id="category">
+                            editors:
+                        </span>
+                        <span id="desc">
+                            vscode, notepad++, vim
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="socials">
+                <button id="discord-btn" class="social-btn" onclick="opendiscord()">
+                    <img src="content/discord.png" class="social-icon">
+                    Levente#5213
+                    <img src="content/arrow.svg" class="arrow">
+                </button>
+                <button id="gh-btn" class="social-btn" onclick="opengithub()">
+                    <img src="content/github.png" class="social-icon">
+                    f1oppa
+                    <img src="content/arrow.svg" class="arrow">
+                </button>
+                <button id="tg-btn" class="social-btn" onclick="opentelegram()">
+                    <img src="content/telegram.png" class="social-icon">
+                    f10ppa
+                    <img src="content/arrow.svg" class="arrow">
+                </button>
+            </div>
+            <div id="footer">
+                background video by 
+                <a target="_blank" href="https://www.youtube.com/playlist?list=OLAK5uy_nxxyNdnf7vGT0FrtvMA6iytiEjcxDBcrg">gyuris</a>
+                &bull; 
+                <a target="_blank" href="https://github.com/f1oppa/f1oppa.github.io/">source</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
