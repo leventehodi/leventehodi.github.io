@@ -7,5 +7,5 @@ function opengithub(){
 }
 
 function opentelegram(){
-    window.open("https://t.me/f10ppa/")
+    window.open("https://t.me/lewentte/")
 }
